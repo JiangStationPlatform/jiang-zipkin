@@ -2,7 +2,7 @@ version: '3.1'
 services:
   jiang-zipkin:
     restart: always
-    image: 104.199.166.17:5000/jiang-zipkin
+    image: jiang-zipkin
     container_name: jiang-zipkin
     ports:
       - 9411:9411
