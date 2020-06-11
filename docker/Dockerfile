@@ -8,6 +8,6 @@ RUN mkdir /app
 
 COPY jiang-zipkin-1.0.0-SNAPSHOT.jar /app/
 
-ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://jiangshikai.com:8888/jiang-zipkin/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-zipkin-1.0.0-SNAPSHOT.jar"]
+ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://192.168.190.132:8888/jiang-zipkin/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-zipkin-1.0.0-SNAPSHOT.jar"]
 
 EXPOSE 9411
